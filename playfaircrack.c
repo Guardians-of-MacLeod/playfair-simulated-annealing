@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
         if(score > maxscore){
             maxscore = score;
             printf("    Key: '%s'\n",key);
-
+            printf("    Current score: %f\n",maxscore);
             // Use the playfairDecipher function to get the plaintext
             playfairDecipher(key, cipher,out, len);
 
